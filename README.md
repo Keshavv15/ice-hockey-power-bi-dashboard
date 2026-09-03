@@ -45,7 +45,7 @@ Ice hockey event data sourced from the Big Data Cup hockey dataset on Kaggle.
 
 ## Dashboard Preview
 
-](Dashboard.png)
+Dashboard.png
 ## Key Analysis
 
 The dashboard analyzes how game events are distributed across categories and periods while comparing team-level shot volume, goals, and overall event activity.
