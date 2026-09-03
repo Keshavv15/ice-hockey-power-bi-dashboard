@@ -1,57 +1,128 @@
-# Ice Hockey Analytics Dashboard
+# 🏒 Ice Hockey Analytics Dashboard
 
-An interactive Power BI dashboard designed to analyze ice hockey game performance, event activity, team performance, and scoring patterns.
+An interactive **Power BI sports analytics dashboard** built to analyze ice hockey game events, scoring patterns, shot volume, team activity, and game-period performance.
 
-## Dashboard Overview
+![Dashboard Preview](Dashboard.png)
 
-The dashboard provides insights into:
+## 📌 Project Overview
 
-- Total Games
-- Total Goals
-- Total Events
-- Total Penalties
-- Total Shots
-- Faceoff Wins
-- Shots by Period
-- Goals by Period
-- Events by Category
-- Team Performance: Shots vs Goals
-- Total Events by Team
-- Event Activity by Game Time
+This project transforms event-level ice hockey data into an interactive analytical dashboard designed to answer practical sports-analytics questions such as:
 
-## Key Metrics
+- How does scoring vary by period?
+- How is shot volume distributed across periods?
+- Which event categories contribute most to overall game activity?
+- How do teams compare in shot volume and goal production?
+- Which teams generate the highest overall event activity?
+- How does event activity change throughout game time?
+
+The focus is on turning raw event records into **clear, decision-oriented visual insights** rather than simply presenting charts.
+
+## 📊 Key Metrics
 
 | Metric | Value |
 |---|---:|
-| Total Games | 3 |
-| Total Goals | 12 |
-| Total Events | 5,591 |
-| Total Penalties | 20 |
-| Total Shots | 313 |
+| Games Analyzed | 3 |
+| Goals | 12 |
+| Game Events | 5,591 |
+| Shots | 313 |
 | Faceoff Wins | 166 |
+| Penalties | 20 |
 
-## Tools & Technologies
+> **Note:** The analysis covers three games, so the results should be interpreted as a game-level sample rather than league-wide performance benchmarks.
 
-- Power BI
-- DAX
-- Data Modeling
-- Data Visualization
-- Data Analysis
-- Interactive Dashboard Design
+## 📈 Dashboard Features
 
-## Dataset
+### Executive KPIs
+- Total Games
+- Total Goals
+- Total Events
+- Total Shots
+- Faceoff Wins
+- Total Penalties
 
-Ice hockey event data sourced from the Big Data Cup hockey dataset on Kaggle.
+### Game & Scoring Analysis
+- Goals by Period
+- Shots by Period
+- Event Activity by Game Time
 
-## Dashboard Preview
+### Team Analysis
+- Team Performance: Shots vs Goals
+- Total Events by Team
 
-[Dashboard.png
-](https://github.com/Keshavv15/ice-hockey-power-bi-dashboard/blob/main/Dashboard.png)
+### Event Analysis
+- Events by Category
+- Breakdown of game activity across event categories such as Play, Possession, Zone Play, Attack, Faceoff, and Penalty
 
-## Key Analysis
+## 🛠️ Tools & Technologies
 
-The dashboard analyzes how game events are distributed across categories and periods while comparing team-level shot volume, goals, and overall event activity.
+- **Power BI** — Dashboard development and interactive visualization
+- **DAX** — KPI measures and analytical calculations
+- **Power Query** — Data transformation and preparation
+- **Data Modeling** — Structuring event-level data for analysis
+- **Data Visualization** — Sports-focused analytical storytelling
 
-## Author
+## 🧹 Data Preparation
 
-Keshav Sharma
+The event data was prepared before visualization through steps including:
+
+1. Combining multiple game-event CSV files into a master event table.
+2. Cleaning and converting date, time, and numeric fields.
+3. Preserving valid event-level records and handling expected missing detail fields.
+4. Creating event categories for higher-level analysis.
+5. Creating game-time buckets for analyzing event activity during the game.
+6. Building DAX measures for reliable game-level KPI calculations.
+7. Designing the dashboard around team, period, event, and scoring analysis.
+
+## 🗂️ Repository Contents
+
+| File | Description |
+|---|---|
+| `icehockey.pbit` | Power BI template containing the dashboard and report structure |
+| `Dashboard.png` | Dashboard preview image |
+| `README.md` | Project documentation |
+
+## 📚 Dataset
+
+The project uses event-level ice hockey data from **Big Data Cup 2025**, featuring Stathletes-tracked hockey event data. The competition dataset includes recorded actions such as shots, goals, plays, takeaways, puck recoveries, dump-ins/outs, zone entries, faceoffs, and penalties.
+
+The games in this project are based on **AHL game data** and should not be interpreted as NHL data.
+
+**Source:** Big Data Cup 2025 / Stathletes
+
+## 🔍 Analytical Approach
+
+The dashboard combines descriptive and comparative analysis:
+
+- **Descriptive analysis:** overall game, scoring, shooting, penalty, and event-volume KPIs.
+- **Temporal analysis:** scoring, shooting, and event activity by period/game time.
+- **Team comparison:** shot volume versus goal production and total event activity.
+- **Event composition:** understanding how different types of hockey actions contribute to overall game activity.
+
+## 🚀 Future Enhancements
+
+Potential next iterations of the project could include:
+
+- Shot-location heatmaps using X/Y coordinates
+- Player-level performance analysis
+- Expected Goals (xG) modeling
+- Zone-entry and zone-exit success rates
+- Shift and player-ice-time analysis
+- Advanced possession metrics
+- Interactive player/team drill-through pages
+- Additional games for a larger analytical sample
+
+## ⚠️ Limitations
+
+- The current dashboard analyzes only three games.
+- Event-level data captures recorded actions but does not by itself provide every contextual factor involved in hockey performance.
+- Findings should therefore be treated as exploratory insights from the selected sample.
+
+## 👤 Author
+
+**Keshav Sharma**
+
+Data Analyst | Power BI | SQL | Python | Data Visualization
+
+---
+
+⭐ If you find this project useful, feel free to explore the dashboard and provide feedback or suggestions for additional hockey analytics.
